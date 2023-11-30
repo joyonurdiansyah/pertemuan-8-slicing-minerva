@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Minerva Sekolah Digital</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link href="https://fonts.cdnfonts.com/css/cocogoose" rel="stylesheet">
   <link href="https://fonts.cdnfonts.com/css/cocogoose-classic-trial" rel="stylesheet">
   <link href="https://fonts.cdnfonts.com/css/coolvetica" rel="stylesheet">
@@ -14,87 +14,101 @@
 
 </head>
 
-<body>
+<body style="font-family: Cocogoose; background-color:#ECECEC;
+width: 100%;
+height: 100vh;">
 
   <header>
     <!-- Navigasi seperti Home, Testimoni, Kontak, dan Masuk -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="asset/image/minervalogo.png" alt=""></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="/asset/image/minervalogo.png" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto  " style="font-size: 12px;">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+        <div class="navbar-collapse collapse" id="navbarNav" style="font-size: 16px; font-family: sans-serif;">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item me-3">
+              <a class="nav-link text-light fw-bold" href="#">Home</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link text-light fw-bold" href="#">Testimoni</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link text-light fw-bold" href="#">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Testimoni</a>
+              <a class="nav-link text-light fw-bold" href="login.html">Masuk</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Masuk</a>
-            </li>
+          </ul>
         </div>
       </div>
     </nav>
   </header>
 
-  <section id="intro">
-    <!-- Sekolah Digital Minerva dan deskripsi -->
-    <div class="container">
-      <div class="box">
-        <div class="rectangle">
-          <h4 style="font-family: sans-serif;">Sekolah Digital </H4>
-          <h1>Minerva</h1>
-          <p style="font-family: Actor;">
-            Minerva merupakan kursus online secara Private yang bertujuan untuk <br />
-            membantu proses pembelajaran dengan harga yang sangat terjangkau, <br>
-            dan penyampaian mater yang
-            mudah dipahami.
-          </p>
-          <div class="boxes-container">
-            <div class="box-item">
-              <label>Member</label>
-              <br>
-              <div class="rectangle">
-                <p >5</p>
-                <hr style="border-top: 3px solid #ccc; width: 26px;">
-              </div>
-            </div>
-            <div class="box-item">
-              <label>Jam</label>
-              <br>
-              <div class="rectangle">
-                <p>40</p>
-                <hr style="border-top: 3px solid #ccc; width: 26px;">
-              </div>
-            </div>
-            <div class="box-item">
-              <label>Kelas</label>
-              <br>
-              <div class="rectangle">
-                <p>4</p>
-                <hr style="border-top: 3px solid #ccc; width: 26px;">
-              </div>
-            </div>
+
+  <!-- Sekolah Digital Minerva dan deskripsi -->
+  <div class="container bg-light rounded-4 mt-5 border-top border-primary-subtle border-5 "
+    style="box-shadow: 14px 15px 20px 1px #00000054;">
+    <h4 class="text-center pt-5 mb-4 fs-4" style="font-family: sans-serif;">Sekolah Digital </H4>
+    <h1 class="text-center mt-0" style="font-size: 64px;">Minerva</h1>
+    <p class="text-center fs-5 mb-4" style="font-family: Actor;">
+      Minerva merupakan kursus online secara Private yang bertujuan untuk <br />
+      membantu proses pembelajaran dengan harga yang sangat terjangkau, <br>
+      dan penyampaian mater yang
+      mudah dipahami.
+    </p>
+    <div class="container pb-5" style="width: 65%;">
+      <div class="row box-item text-center mb-5">
+        <div class="col">
+          <label>Member</label>
+          <br>
+          <br>
+          <div class="border border-3 rounded-4 fs-1 mx-5 d-flex flex-column align-items-center justify-content-center"
+            style="height: 120px; width: 120px; position: relative;">
+            <p class="text-center py-4" style="font-family: 'Coolvetica'; margin-bottom: 0;">5</p>
+            <hr class="text-center" style="border-top: 3px solid #ccc; width: 26px; position: absolute; bottom: 0;">
           </div>
-          <button type="button" class="btn btn-primary btn-block mx-auto"
-            style="width: 20%;border-radius: 15px; margin-top: 70px; height: 50px;">Gabung</button>
+        </div>
+        <div class="col">
+          <label>Jam</label>
+          <br>
+          <br>
+          <div class="border border-3 rounded-4 fs-1 mx-5 d-flex flex-column align-items-center justify-content-center"
+            style="height: 120px; width: 120px; position: relative;">
+            <p class="text-center py-4" style="font-family: 'Coolvetica'; margin-bottom: 0;">40</p>
+            <hr class="text-center" style="border-top: 3px solid #ccc; width: 26px; position: absolute; bottom: 0;">
+          </div>
+        </div>
+        <div class="col">
+          <label>Kelas</label>
+          <br>
+          <br>
+          <div class="border border-3 rounded-4 fs-1 mx-5 d-flex flex-column align-items-center justify-content-center"
+            style="height: 120px; width: 120px; position: relative;">
+            <p class="text-center py-4" style="font-family: 'Coolvetica'; margin-bottom: 0;">4</p>
+            <hr class="text-center" style="border-top: 3px solid #ccc; width: 26px; position: absolute; bottom: 0;">
+          </div>
         </div>
       </div>
+
+
+      <div class="text-center mt-5">
+        <button type="button" class="btn btn-primary rounded-pill" style="width: 30%;height: 50px;">
+          Gabung
+        </button>
+      </div>
+
     </div>
-  </section>
+  </div>
+  <hr class="border-4" style=" margin: 3rem 10rem 0 10rem;">
 
-
-
-  <section id="stats">
-    <!-- Statistik Member, Jam, dan Kelas -->
-  </section>
+  <!-- Statistik Member, Jam, dan Kelas -->
+  <div class="container bg-light rounded-4"
+    style="box-shadow: 14px 15px 20px 1px #00000054;">
+  
+  </div>
 
   <section id="pricing">
     <!-- Harga Kelas dengan detail -->

@@ -1,6 +1,62 @@
 <!DOCTYPE html>
 <html lang="id">
 
+<style>
+  .card {
+    border-radius: 30px !important;
+    background: #C4C4C4;
+    box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25);
+    height: 293px;
+}
+
+.card-body {
+    border-radius: 30px !important;
+    background: #FFF;
+}
+
+  /* Gaya CSS lainnya */
+  .copyright {
+    color: #9B9B9B;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    display: flex;
+  }
+
+  .card>.frame {
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    padding: 60px;
+    width: 100%;
+    height: 60%;
+    background-color: gainsboro;
+  }
+
+  .btn-courses {
+    width: 169px;
+    height: 42px;
+    border-radius: 7px;
+    background: #5097FF;
+    border: none;
+    margin-top: 8px;
+    color: white;
+  }
+
+  .card-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .copyright {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+</style>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,11 +103,11 @@ height: 100vh;">
     </nav>
   </header>
 
-
   <!-- Sekolah Digital Minerva dan deskripsi -->
   <div class="container bg-light rounded-4 mt-5 border-top border-primary-subtle border-5 "
     style="box-shadow: 14px 15px 20px 1px #00000054;">
-    <h4 class="text-center pt-5 mb-4 fs-4" style="font-family: sans-serif;">Sekolah Digital </H4>
+    <h4 class="text-center pt-5 mb-4 fs-4" style="font-family: sans-serif;">Sekolah
+      Digital </h4>
     <h1 class="text-center mt-0" style="font-size: 64px;">Minerva</h1>
     <p class="text-center fs-5 mb-4" style="font-family: Actor;">
       Minerva merupakan kursus online secara Private yang bertujuan untuk <br />
@@ -93,7 +149,6 @@ height: 100vh;">
         </div>
       </div>
 
-
       <div class="text-center mt-5">
         <button type="button" class="btn btn-primary rounded-pill" style="width: 30%;height: 50px;">
           Gabung
@@ -105,17 +160,80 @@ height: 100vh;">
   <hr class="border-4" style=" margin: 3rem 10rem 0 10rem;">
 
   <!-- Statistik Member, Jam, dan Kelas -->
-  <div class="container bg-light rounded-4"
-    style="box-shadow: 14px 15px 20px 1px #00000054;">
-  
+  <div class="container bg-light rounded-4" style="box-shadow: 14px 15px 20px 1px #00000054;">
+
   </div>
 
   <section id="pricing">
     <!-- Harga Kelas dengan detail -->
   </section>
 
-  <section id="courses">
-    <!-- Kelas di Minerva dengan kategori -->
+  
+  <section class="card-section justify-content-center d-flex gap-xxl-4 pt-4" id="courses" style="padding-bottom: 50px;">
+    <div class="row container">
+      <div class="col-md-12 text-center">
+        <h2>Kelas di Minerva</h2>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card border-3 text-center" style="width: 18rem;">
+          <div class="frame"></div>
+          <div class="card-body p-4">
+            <h3>Basic</h3>
+            <button class="btn-courses">Lihat</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card border-3 text-center" style="width: 18rem;">
+          <div class="frame"></div>
+          <div class="card-body p-4">
+            <h3>Advanced</h3>
+            <button class="btn-courses">Lihat</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card border-3 text-center" style="width: 18rem;">
+          <div class="frame"></div>
+          <div class="card-body p-4">
+            <h3>Advanced</h3>
+            <button class="btn-courses">Lihat</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card border-3 text-center" style="width: 18rem;">
+          <div class="frame"></div>
+          <div class="card-body p-4">
+            <h3>Basic</h3>
+            <button class="btn-courses">Lihat</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card border-3 text-center" style="width: 18rem;">
+          <div class="frame"></div>
+          <div class="card-body p-4">
+            <h3>Moderated</h3>
+            <button class="btn-courses">Lihat</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card border-3 text-center" style="width: 18rem;">
+          <div class="frame"></div>
+          <div class="card-body p-4">
+            <h3>Advanced</h3>
+            <button class="btn-courses">Lihat</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section id="testimonials">
@@ -126,7 +244,6 @@ height: 100vh;">
     <!-- Informasi kontak dan alamat -->
   </footer>
 
-
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
   integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -134,8 +251,6 @@ height: 100vh;">
   integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
   integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-
 
 </style>
 

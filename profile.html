@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>profile</title>
+        <!-- Pastikan untuk menyertakan Bootstrap CSS -->
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous">
+        <link href="https://fonts.cdnfonts.com/css/cocogoose" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/cocogoose-classic-trial"
+            rel="stylesheet">
+        <style>
+        .navbar-custom {
+            background-color: #0080FF !important; 
+        }
+        .navbar-nav .nav-item {
+            margin-right: 15px;/
+        }
+        .custom-card {
+            width: 584px;
+            margin: 0 auto; /* Center the card */
+        }
+        .custom-button {
+            width: 100%;
+            padding: 16px;
+            border-radius: 15px;
+            background: #0080FF;
+            color: white;
+            border: none;
+        }
+        /* Styling for the dropdowns and button */
+        .custom-dropdown {
+            margin-bottom: 10px;
+        }
+        .custom-dropdown select {
+            width: 100%;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .form-inline .custom-dropdown {
+            width: auto;
+        }
+        
+        .btn-custom {
+            padding: 4px;
+            border-radius: 15px;
+            background: #0080FF;
+            color: white;
+        }
+
+        .title-username {
+            color: #333;
+            font-family: 'Cocogoose', sans-serif;
+            font-size: 24px;
+            font-weight: 400;
+            text-align: center; 
+            margin-bottom: 20px;
+        }   
+    </style>
+    </head>
+    <body style="background-color: F0F0F0;">
+        <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+            <div class="collapse navbar-collapse pb-2" id="navbarNav">
+                <ul class="navbar-nav pt-2"
+                    style="display: flex; align-items: center; color: #FFF; font-family: Cocogoose; font-size: 14px; font-style: normal; font-weight: 400; line-height: normal;">
+                    <!-- Logo with adjusted margin -->
+                    <li class="nav-item active" style="padding-right: 80px;">
+                        <a class="navbar-brand" href="#">
+                            <img
+                                style="width: 127px; height: 27px; flex-shrink: 0; margin-left: 40px;"
+                                src="asset/image/minervalogo.png"
+                                alt="Logo"
+                                height="30">
+                        </a>
+                    </li>
+                    <!-- Navigation Links -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: #FFF;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: #FFF;">Testimoni</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: #FFF;">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card custom-card">
+                        <div class="card-body">
+                            <h2 class="title-username">Username</h2>
+                            <form>
+                                <div class="form-group">
+                                    <label for="classSelection">Pilih Kelas</label>
+                                    <select class="form-control"
+                                        id="classSelection"
+                                        style="border-radius: 15px; border: 2px solid #0080FF; padding: 0.5rem 1rem;">
+                                        <option value disabled selected>Pilih
+                                            Kelas Anda</option>
+                                        <option>Kelas 1</option>
+                                        <option>Kelas 2</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="col-3">
+                                        <label for="timeSelection">Jam</label>
+                                        <select class="form-control"
+                                            id="timeSelection"
+                                            style="border-radius: 15px; border: 2px solid #0080FF; padding: 0.5rem 1rem;">
+                                            <option value disabled selected>Jam</option>
+                                            <option>08:00</option>
+                                            <option>09:00</option>
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <label for="daySelection">Hari</label>
+                                        <select class="form-control"
+                                            id="daySelection"
+                                            style="border-radius: 15px; border: 2px solid #0080FF; padding: 0.5rem 1rem;">
+                                            <option value disabled selected>Pilih
+                                                Hari</option>
+                                            <option>Senin</option>
+                                            <option>Selasa</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group mt-4">
+                                    <button type="submit"
+                                        class="btn btn-custom btn-block py-2">Pesan</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+</html>
